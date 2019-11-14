@@ -88,6 +88,10 @@ body{
     text-align: center;
 }
 
+#skills, #projects, #articles, #experimentsAndFun, #guides, #contact{
+    min-height: 80vh;
+}
+
 /* about me section */
 
 #aboutMe{
@@ -108,11 +112,51 @@ body{
     text-shadow: 3px 3px rgba(61, 61, 150, 0.4);
 }
 
-/* end about me section */
+/* skills section */
 
-#skills, #projects, #articles, #experimentsAndFun, #guides, #contact{
-    min-height: 80vh;
+#skills .title{
+    margin-bottom: 5vh;
 }
+.skillList{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.skillList .icon{
+    position: relative;
+    height: 10vmin;
+    width: 10vmin;
+    font-size: 8vmin;
+    line-height: 10vmin;
+    background-color: white;
+    border-radius: 50%;
+    color: lightskyblue;
+    display: inline-block;
+}
+
+#skills{
+    background-color: lightskyblue;
+    color: white;
+}
+#skills > section{
+    width: 20%;
+}
+#skills .sectionTitle{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 5% 0%;
+}
+#skills .item{
+    margin: 3% 0%;
+}
+
+/* end skills section */
+
+/* project section */
+
+/* end project section */
+
+/* end about me section */
 
 /* end sections */
 
