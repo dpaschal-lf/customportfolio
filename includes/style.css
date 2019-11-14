@@ -6,7 +6,6 @@ body{
     display: flex;
 }
 .centerContainer{
-    width: 90%;
     margin: 0 auto;
 }
 .hidden{
@@ -49,24 +48,95 @@ body{
 
 /*end mobile menu */
 
+/* desktop menu */
+
+#nav{
+    position: sticky;
+    top: 0px;
+    float: left;
+    width: 100%;
+    z-index: 1;
+}
+
+.desktopMenu .menuContent{
+    display: flex;
+    background-color: black;
+}
+.desktopMenu .menuItem{
+    width: 100%;
+    margin: 1%;
+    color: white;
+    text-align: center;
+    border: 1px solid rgba(200,200,200,.5);
+    border-width: 0px 1px;
+    padding: 1%;
+    border-radius: 15%;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 80%;
+}
+.desktopMenu .menuItem:hover{
+    color: lightblue;
+}
+
+/* end desktop menu */
+
+/* sections */
+
+.title{
+    font-size: 2em;
+    text-align: center;
+}
+
+/* about me section */
+
+#aboutMe{
+    background-image: url(../images/background-about-me_2.png);
+    background-size: cover;
+    background-position: top right;
+    min-height: 98vh;
+    border-top: 0x solid black;
+}
+
+#aboutMe .title{
+    font-size: 4em;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: 3px 3px rgba(61, 61, 150, 0.4);
+}
+
+/* end about me section */
+
+#skills, #projects, #articles, #experimentsAndFun, #guides, #contact{
+    min-height: 80vh;
+}
+
+/* end sections */
+
 /* large devices*/
 @media (min-width:1200px){
     .centerContainer{
-        width: 60%;
+        width: 90%;
     }
 }
 
 /* medium devices */
 @media (min-width: 992px){
     .centerContainer{
-        width: 70%;
+        width: 90%;
     }
 }
 
 /*small devices */
 @media (min-width: 768px){
+    body{
+        margin: 0;
+    }
     .centerContainer{
-        width: 80%;
+        width: 100%;
     }
 }
 
