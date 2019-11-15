@@ -217,7 +217,7 @@ body{
     margin: auto;
     cursor: pointer;
 }
-#projects .item .links>*:hover{
+#projects .item .fa:hover{
     transition-duration: .2s;
     transition-delay: 0s;
     color: lime;
@@ -248,8 +248,6 @@ body{
 }
 
 /* end project section */
-
-/* end about me section */
 
 /* end sections */
 
