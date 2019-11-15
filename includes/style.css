@@ -153,6 +153,92 @@ body{
 /* end skills section */
 
 /* project section */
+#projects .item{
+    width: 30%;
+    display: inline-block;
+    height: 50vh;
+    background-color: black;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+#projects .item::before{
+    content: '';
+    background-size: 120% 120%;
+    background-position: center;
+    filter: blur(3px) grayscale(80%);
+    transition-duration: .25s;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#projects .item:hover::before{
+    filter: blur(0px) grayscale(0%);
+    background-size: 100% 100%;
+}
+#projects .item .title{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    transition-duration: .1s;
+    text-shadow: 3px 3px black;
+    transform: scale(1);
+    opacity: 1;
+}
+#projects .item .links{
+    width: 99%;
+    height: 15%;
+    background-color: white;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    left: .5%;
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(100%);
+    transition-duration: .5s;
+}
+#projects .item:hover .links{
+    transform: translateY(0%);
+}
+#projects .item .links>*{
+    transition-duration: .25s;
+    transform: translateY(100%);
+    transition-delay: 0s;
+    margin: auto;
+    cursor: pointer;
+}
+#projects .item .links>*:hover{
+    transition-duration: .2s;
+    transition-delay: 0s;
+    color: lime;
+}
+#projects .item:hover .links>*:nth-child(1){
+    transition-delay: .1s;
+    transform: translateY(0%);
+}
+#projects .item:hover .links>*:nth-child(2){
+    transition-delay: .3s;
+    transform: translateY(0%);
+}
+#projects .item:hover .links>*:nth-child(3){
+    transition-delay: .4s;
+    transform: translateY(0%);
+}
+#projects .fa{
+    font-size: 2em;
+}
+#projects .item:hover .title{
+    transition-duration: .5s;
+    transform: scale(3);
+    opacity: 0;
+}
+
+.testProject::before{
+    background-image: url(https://files.realpython.com/media/13-Python-Projects-for-Intermediate-Developers_Watermarked.bb98d44bdb10.jpg);
+}
 
 /* end project section */
 
