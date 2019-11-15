@@ -153,6 +153,12 @@ body{
 /* end skills section */
 
 /* project section */
+
+#projects .items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 #projects .item{
     width: 30%;
     display: inline-block;
@@ -161,6 +167,7 @@ body{
     color: white;
     position: relative;
     overflow: hidden;
+    margin-bottom: 10%;
 }
 #projects .item::before{
     content: '';
