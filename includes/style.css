@@ -249,6 +249,53 @@ body{
 
 /* end project section */
 
+/* article section */
+
+#articles{
+    background-image: url(../images/information.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#articles .articleList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#articles .item{
+    width: 20%;
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    margin: 2% 0%;
+    text-align: center;
+    background-color: white;
+    background-color: rgba(255,255, 255,.8);
+    padding: 1%;
+}
+
+/* end article section */
+
+/* fun stuff section */
+
+#experimentsAndFun{
+    background-color: lightseagreen;
+}
+
+/* end fun stuff section */
+
+/* guide section */
+
+#guides{
+    background-image: url(../images/landscape.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* end guide section */
+
 /* end sections */
 
 /* large devices*/
