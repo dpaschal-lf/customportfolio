@@ -554,3 +554,9 @@ body{
         width: 100%;
     }
 }
+
+/* templates */
+
+#template{
+    display: none;
+}
