@@ -154,6 +154,11 @@ body{
 
 /* project section */
 
+#projects{
+    background-image: url(https://storage.needpix.com/rsynced_images/clouds-background-005.jpg);
+    background-attachment: fixed;
+}
+
 #projects .items{
     display: flex;
     flex-wrap: wrap;
@@ -396,6 +401,7 @@ body{
 
 #experimentsAndFun .itemList{
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 #experimentsAndFun .item{
@@ -570,7 +576,7 @@ body{
 
 #guides .item:hover .menu{
     transition-duration: .5s;
-    transition-delay: .25s;
+    transition-delay: .50s;
     transform: translateX(0);
 }
 #guides .item::after{
