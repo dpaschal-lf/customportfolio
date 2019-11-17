@@ -296,7 +296,121 @@ body{
 
 /* end guide section */
 
+/* fun stuff section */
+
+#experimentsAndFun .itemList{
+    display: flex;
+    flex-wrap: wrap;
+}
+#experimentsAndFun .item{
+    width: 30vmin;
+    height: 30vmin;
+    background-color: lavender;
+    margin: 2% 3%;
+    position: relative;
+}
+#experimentsAndFun .infoContainer{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#experimentsAndFun .info{
+    margin: auto;
+    transform: scale(2);
+    transition-duration: .5s;
+    width: 50%;
+    height: 50%;
+    border: 2px solid whitesmoke;
+    opacity: 0;
+    background-color: rgba(255,255, 255,.8);
+}
+#experimentsAndFun .info > *{
+    position: absolute;
+    font-size: 2em;
+}
+#experimentsAndFun .item:hover .info{
+    transform: scale(1);
+    opacity: 1;
+}
+#experimentsAndFun .info > *:nth-child(1){
+    left: 5%;
+    top: 5%;
+}
+#experimentsAndFun .info > *:nth-child(2){
+    right: 5%;
+    top: 5%;
+}
+#experimentsAndFun .info > *:nth-child(3){
+    left: 5%;
+    bottom: 5%;
+}
+#experimentsAndFun .info > *:nth-child(4){
+    right: 5%;
+    bottom: 5%;
+}
+#experimentsAndFun .item .background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px) grayscale(50%);
+}
+#experimentsAndFun .item .title, #experimentsAndFun .item .description{
+    position: relative;
+    background-color: darkslategrey;
+    color: white;
+    transition-duration: .75s;
+}
+#experimentsAndFun .item:hover .title{
+    transform: scaleX(0);
+    opacity: 0;
+}
+#experimentsAndFun .item .description{
+    transform-origin: 0% 50%;
+}
+#experimentsAndFun .item .title{
+    transform-origin: 100% 50%;
+}
+#experimentsAndFun .item:hover .description{
+    transform: scaleX(0);
+}
+#experimentsAndFun .item:hover .background{
+    filter: blur(0px) grayscale(0%);
+}
+#experimentsAndFun .title{
+    font-weight: bold;
+    text-align: center;
+}
+#experimentsAndFun .description{
+    text-align: center;
+}
+/* end fun stuff section */
+
 /* end sections */
+
+/* coloring */
+
+.fa-js{
+    color: gold;
+    background-color: black;
+}
+.fa-html5{
+    color: orange;
+}
+.fa-css3-alt{
+    color: blue;
+}
+.fa-react{
+    color: cornflowerblue;
+}
 
 /* large devices*/
 @media (min-width:1200px){
