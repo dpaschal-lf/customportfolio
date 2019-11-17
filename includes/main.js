@@ -2,7 +2,8 @@
 $(document).ready( startApp );
 
 function startApp(){
-    addFunSections();
+    addFunItems();
+    addGuideItems();
 }
 
 var funData = [
@@ -135,7 +136,17 @@ var funData = [
     }
 ]
 
-function addFunSections(){
+var guidesData = [
+    {
+        title: 'JS_OOP',
+        icons: [
+            { classes: 'fab fa-js' },
+            { classes: 'fa fa-eye', url: 'https://docs.google.com/presentation/d/e/2PACX-1vTvCDJnxLi8rNVXuMQxlOJt6s1Q_NrMwVhb5St0gtDObJ1MgZqnK7DRgT6qi80NQdF7Fd42KYUTOBC3/pub?start=false&loop=false&delayms=3000&slide=id.p'}
+        ]
+    }
+]
+
+function addFunItems(){
     var targetContainer = $("#experimentsAndFun .itemList");
     for( var dataIndex = 0; dataIndex < funData.length; dataIndex++){
         var currentData = funData[dataIndex];
@@ -156,6 +167,31 @@ function addFunSections(){
                 container.append(icon);
             }
             item.find('.info').append(container);
+        }
+        targetContainer.append(item);
+    }
+}
+
+function addGuideItems(){
+    var targetContainer = $("#guides .itemList");
+    for( var dataIndex = 0; dataIndex < guidesData.length; dataIndex++){
+        var currentData = guidesData[dataIndex];
+        var item = $("#guideItem").clone();
+        item.removeAttr('id');
+        item.find('.title, .subTitle').text( currentData.title);
+        item.find('.description').text( currentData.description);
+        for( var iconIndex=0; iconIndex < currentData.icons.length ; iconIndex++){
+            var currentIcon = currentData.icons[iconIndex];
+            var icon = $("<i>").addClass( currentIcon.classes);
+            var container = icon;
+            if(currentIcon.hasOwnProperty('url')){
+                container = $("<a>",{
+                    target: '_blank',
+                    href: currentIcon.url
+                });
+                container.append(icon);
+            }
+            item.find('.menu').append(container);
         }
         targetContainer.append(item);
     }

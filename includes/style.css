@@ -394,6 +394,117 @@ body{
 }
 /* end fun stuff section */
 
+/* guide section */
+
+#guides .itemList{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#guides .item{
+    height: 30vmin;
+    width: 30vmin;
+    background-size: cover;
+    background-position: center;
+    transition-duration: .75s;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.4);
+}
+#guides .item .title{
+    position: absolute;
+    left: 97%;
+    bottom: 0;
+    transition-duration: .5s;
+    transform: translateX(-100%);
+    color: black;
+    text-shadow: 2px 2px white;
+    z-index: 1;
+    font-size: 3vmin;
+    line-height: 6vmin;
+    width: auto;
+
+}
+#guides .item .subTitle1, #guides .item .subTitle2{
+    position: absolute;
+}
+#guides .item .subTitle1{
+    position: absolute;
+    opacity: .5;
+    font-size: 15vmin;
+    left: -5vmin;
+    color: white;
+}
+#guides .item .subTitle2{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-weight: bold;
+    font-size: 5vmin;
+    left: 50%;
+    top: 10%;
+    color: lightseagreen;
+    opacity: .3;
+}
+#guides .item .menu{
+    position: absolute;
+    right: 0%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translateX(100%);
+    height: 75%;
+    width: 5vmin;
+    align-items: center;
+    transition-duration: .5s;
+    z-index: 1;
+    transform-origin: 100% 50%;
+}
+#guides .item .menu a:visited{
+    color: lavender;
+}
+#guides .item:hover{
+    background-color: rgba(255,255,255,1);
+}
+#guides .item:hover .subTitle{
+    color: black;
+}
+
+#guides .item:hover .menu{
+    transition-duration: .5s;
+    transition-delay: .25s;
+    transform: translateX(0);
+}
+#guides .item::after{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    background-color: rgba(255,255,255,0);
+    border: 0px solid black;
+    width: 100%;
+    height: 100%;
+    transition-duration: .5s;
+}
+
+#guides .item:hover::after{
+    background-color: rgba(255,255,255,.4);
+    border-color: black;
+    border-style: solid;
+    border-width: 2vmin 5vmin 5vmin 2vmin;
+}
+#guides .item:hover .title{
+    left: 3%;
+    color: white;
+    transform: translateX(0%);
+    text-shadow: 2px 2px black;
+    transition-duration: .5s;
+    transition-delay: .25s;
+}
+/* end guide section */
+
 /* end sections */
 
 /* coloring */
