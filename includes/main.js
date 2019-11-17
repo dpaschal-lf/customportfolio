@@ -89,6 +89,49 @@ var funData = [
             { classes: 'fab fa-css3-alt' },
             { classes: 'fa fa-eye', url: 'https://codesandbox.io/s/nice-bush-kwtu9'}
         ]
+    },
+    {
+        title: 'hover timer',
+        description: 'js react-js css',
+        background: './images/fun/hovertimer.png',
+        icons: [
+            { classes: 'fab fa-js' },
+            { classes: 'fab fa-react' },
+            { classes: 'fab fa-css3-alt' },
+            { classes: 'fa fa-eye', url: 'https://codesandbox.io/s/hovercontentwithtimer-7diw6'}
+        ]
+    },
+    {
+        title: 'drag select',
+        description: 'js react-js css',
+        background: './images/fun/dragselect.png',
+        icons: [
+            { classes: 'fab fa-js' },
+            { classes: 'fab fa-react' },
+            { classes: 'fab fa-css3-alt' },
+            { classes: 'fa fa-eye', url: 'https://codesandbox.io/s/griddragmarking-v1b8p'}
+        ]
+    },
+    {
+        title: 'letter juggle',
+        description: 'js jquery css',
+        background: './images/fun/letterjuggle.png',
+        icons: [
+            { classes: 'fab fa-js' },
+            { classes: 'fab fa-css3-alt' },
+            { classes: 'fa fa-eye', url: 'https://jsbin.com/rofaron/edit?js,output'}
+        ]
+    },
+    {
+        title: 'php tictactoe',
+        description: 'js jquery css',
+        background: './images/fun/letterjuggle.png',
+        icons: [
+            { classes: 'fab fa-php' },
+            { classes: 'fab fa-css3-alt' },
+            { classes: 'fas fa-code', url: 'https://github.com/dpaschal-lf/php_tic_tac_toe' },
+            { classes: 'fa fa-eye', url: 'http://danielpaschal.com/php_tic_tac_toe/'}
+        ]
     }
 ]
 
