@@ -137,7 +137,7 @@ var articlesData = [
         url: 'https://www.linkedin.com/pulse/touch-detection-react-daniel-paschal/'
     },
     {
-        title: 'Webscraping is legal... kinda...sometimes',
+        title: 'Webscraping is legal... kinda... sometimes',
         background: './images/articles/webscraping.jpeg',
         text: "Web scraping, for those that don't know, is the act of harvesting data from a data resource. Specifically it is harvesting data from a webpage, typically meant for human consumption, and processing it with a script to extract the useful bits.",
         url: 'https://www.linkedin.com/pulse/webscraping-legal-kindasometimes-daniel-paschal/'
