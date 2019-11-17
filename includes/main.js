@@ -143,6 +143,13 @@ var guidesData = [
             { classes: 'fab fa-js' },
             { classes: 'fa fa-eye', url: 'https://docs.google.com/presentation/d/e/2PACX-1vTvCDJnxLi8rNVXuMQxlOJt6s1Q_NrMwVhb5St0gtDObJ1MgZqnK7DRgT6qi80NQdF7Fd42KYUTOBC3/pub?start=false&loop=false&delayms=3000&slide=id.p'}
         ]
+    },
+    {
+        title: 'oopconversion',
+        icons: [
+            { classes: 'fab fa-js' },
+            { classes: 'fa fa-eye', url: 'https://docs.google.com/presentation/d/e/2PACX-1vRQCUCXZu_XVqm5-rilvwg4U8KhkkMWEyRt2JH6KmRRVQBVSpXGegKuyNto--GsHbDQPyTpViI0Sq0Q/pub?start=false&loop=false&delayms=3000&slide=id.g1b2ecf4593_0_0'}
+        ]
     }
 ]
 
