@@ -6,6 +6,7 @@ function startApp(){
     addGuideItems();
     addArticlesItems();
     addEventListeners();
+    determinePageLocation();
 }
 
 
@@ -118,14 +119,12 @@ function scrollToSection( event ){
 }
 
 
-function determinePageLocation( event ){
+function determinePageLocation(  ){
     $(".selected").removeClass('selected');
-    //document.querySelector('.selected').classList.remove('selected');
     var currentScroll = document.querySelector('html').scrollTop;
     var targets = $(".centerContainer > *");
     var currentPosition = 0;
     var currentHeight = 0;
-    debugger;
     while( currentPosition < targets.length && currentScroll > currentHeight){
         console.log('height: ' + currentHeight );
         currentHeight += $(targets[++currentPosition]).height();
