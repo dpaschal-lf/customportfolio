@@ -5,7 +5,7 @@ function startApp(){
     addFunItems();
     addGuideItems();
     addArticlesItems();
-    addLinkNavs();
+    addEventListeners();
 }
 
 
@@ -101,8 +101,9 @@ function addArticlesItems(){
     }
 }
 
-function addLinkNavs(){
+function addEventListeners(){
     $(".menuItem").click( scrollToSection );
+    $(document).on('scroll', determinePageLocation );
 }
 
 function scrollToSection( event ){
@@ -113,7 +114,21 @@ function scrollToSection( event ){
     var navHeight = $("#nav").height();
     $('body, html').animate({
         scrollTop: Math.floor(destinationLocation)-navHeight+'px'
-    },200)
+    },200);
+}
 
-    
+
+function determinePageLocation( event ){
+    $(".selected").removeClass('selected');
+    //document.querySelector('.selected').classList.remove('selected');
+    var currentScroll = document.querySelector('html').scrollTop;
+    var targets = $(".centerContainer > *");
+    var currentPosition = 0;
+    var currentHeight = 0;
+    debugger;
+    while( currentPosition < targets.length && currentScroll > currentHeight){
+        console.log('height: ' + currentHeight );
+        currentHeight += $(targets[++currentPosition]).height();
+    }
+    $("#nav .desktopMenu .menuItem").eq(currentPosition).addClass('selected');
 }

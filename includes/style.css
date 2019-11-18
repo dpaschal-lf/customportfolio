@@ -11,6 +11,7 @@ body{
 .hidden{
     display: none;
 }
+
 /* mobile menu */
 .mobileMenu{
     position: absolute;
@@ -91,7 +92,10 @@ body{
 #skills, #projects, #articles, #experimentsAndFun, #guides, #contact{
     min-height: 80vh;
 }
-
+#nav .menuItem.selected{
+    border-right-width: 10px;
+    border-left-width: 10px;
+}
 /* about me section */
 
 #aboutMe{
