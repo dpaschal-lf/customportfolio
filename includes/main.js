@@ -5,6 +5,7 @@ function startApp(){
     addFunItems();
     addGuideItems();
     addArticlesItems();
+    addLinkNavs();
 }
 
 
@@ -98,4 +99,21 @@ function addArticlesItems(){
         item.find('.intro').attr('href', currentData.url).append( lines );
         targetContainer.append(item);
     }
+}
+
+function addLinkNavs(){
+    $(".menuItem").click( scrollToSection );
+}
+
+function scrollToSection( event ){
+    debugger;
+    var target = event.target.getAttribute('data-section');
+    var destinationElement = document.querySelector(target);
+    var destinationLocation = $(destinationElement).offset().top;
+    var navHeight = $("#nav").height();
+    $('body, html').animate({
+        scrollTop: Math.floor(destinationLocation)-navHeight+'px'
+    },200)
+
+    
 }
