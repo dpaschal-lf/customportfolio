@@ -175,7 +175,7 @@ var articlesData = [
     {
         title: "A thought on cramming",
         background: './images/articles/cramming.jpeg',
-        text: `I hear from a log of students and developers that they want to "study up" before a test / certification / interview.`,
+        text: `I hear from a lot of students and developers that they want to "study up" before a test / certification / interview.`,
         url: 'https://www.linkedin.com/pulse/quick-thought-cramming-interview-test-daniel-paschal/'
     },
     {
