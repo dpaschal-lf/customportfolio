@@ -267,6 +267,10 @@ body{
 .testProject::before{
     background-image: url(https://files.realpython.com/media/13-Python-Projects-for-Intermediate-Developers_Watermarked.bb98d44bdb10.jpg);
 }
+.todoJqueryMysqlProject::before{
+    background-image: url(../images/projects/todoexample.gif);
+    background-position: top left;
+}
 
 /* end project section */
 
