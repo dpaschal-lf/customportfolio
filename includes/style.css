@@ -215,6 +215,14 @@ body{
     transform: scale(1);
     opacity: 1;
 }
+#projects .item .title > *{
+    margin-left: .25em;
+    font-size: .5em;
+    text-shadow: initial;
+}
+#projects .item .title > *:first-child{
+    margin-left: 1em;
+}
 #projects .item .links{
     width: 99%;
     height: 15%;
@@ -658,6 +666,9 @@ body{
 }
 .fa-react{
     color: cornflowerblue;
+}
+.fa-php{
+    color: blue;
 }
 
 /* large devices*/

@@ -20,11 +20,11 @@ function addProjectItems(){
         item.removeAttr('id');
         var titleDom = item.find('.title');
         titleDom.text( currentData.title);
-        for( var techIndex=0; techIndex < currentData.technologies; techIndex++){
+        for( var techIndex=0; techIndex < currentData.technologies.length; techIndex++){
             var currentTech = currentData.technologies[ techIndex ];
             allTechs[currentTech] = allTechs[currentTech] ? allTechs[currentTech]+1 : 1;
-            clone.addClass('tech-' + currentTech);
-            var techInfo = techMap[currentTect];
+            item.addClass('tech-' + currentTech);
+            var techInfo = techMap[currentTech];
             var techTag = $('<i>').addClass( techInfo.classes).attr('alt',techInfo.altText);
             titleDom.append(techTag);
         }
