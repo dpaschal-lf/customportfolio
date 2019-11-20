@@ -131,3 +131,16 @@ function determinePageLocation(  ){
     }
     $("#nav .desktopMenu .menuItem").eq(currentPosition).addClass('selected');
 }
+
+/* modal functions */
+
+function displayModal( content ){
+    $("#modalShadow").removeClass('hidden');
+    $("#modalClose").off('click').click( this.hideModal );
+    $("#modalContent").html( content );
+}
+function hideModal(){
+    $("#modalShadow").addClass('hidden');
+}
+
+/* end modal section */
