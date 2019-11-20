@@ -1,4 +1,63 @@
+var projectData = [
+    {
+        title: 'Todo jQuery',
+        extraClasses: 'todoJqueryMysqlProject',
+        technologies: ['html','css','jquery','php','mysql'],
+        links: {
+            'github': 'https://github.com/dpaschal-lf/todo_base_oop_jquery_mysql_php',
+            'live': 'http://app.danielpaschal.com/todo_base_oop_jquery_mysql_php/',
+        },
+        background: 'images/projects/todoexample.gif'
+    },
+    {
+        title: 'Project',
+        extraClasses: 'testProject',
+        technologies: ['html','css','jquery'],
+        links: {
+            'github': 'https://github.com/dpaschal-lf',
+            'live': 'http://danielpaschal.com',
+        },
+        background: 'https://files.realpython.com/media/13-Python-Projects-for-Intermediate-Developers_Watermarked.bb98d44bdb10.jpg'
+    }
+]
 
+var techMap = {
+    mysql: {
+        classes: 'fa mysql',
+        altText: 'MySQL',
+        categories: ['database', 'server']
+    },
+    jquery: {
+        classes: 'fa jquery',
+        altText: 'jQuery',
+        categories: ['library','client']
+    },
+    html: {
+        classes: 'fab fa-html5',
+        altText: 'HTML 5',
+        categories: ['client']
+    },
+    js: {
+        classes: 'fab fa-js',
+        altText: 'Javascript ES5/ES6',
+        categories: ['client']
+    },
+    css: {
+        classes: 'fab fa-css3-alt',
+        altText: 'CSS 3',
+        categories: ['client']
+    },
+    react: {
+        classes: 'fab fa-react',
+        altText: 'ReactJS',
+        categories: ['framework','client']
+    },
+    php: {
+        classes: 'fab fa-php',
+        altText: 'PHP',
+        categories: ['server']
+    }
+}
 
 
 var funData = [
