@@ -35,7 +35,6 @@ function addProjectItems(){
             var clickData = currentData;
             item.find('.info').click( 
                 function(){
-                    debugger;
                     displayModal( clickData.info );
                 }
             )
