@@ -9,6 +9,25 @@ function startApp(){
     determinePageLocation();
 }
 
+function addProjectItems(){
+    var targetContainer = $("#guides .itemList");
+    var allTechs = {};
+    for( var dataIndex = 0; dataIndex < projectData.length; dataIndex++){
+        var currentData = projectData[dataIndex];
+        var item = $("#projectItem").clone();
+        item.addClass( currentData.extraClasses );
+        item.removeAttr('id');
+        var titleDom = item.find('.title');
+        titleDom.text( currentData.title);
+        for( var techIndex=0; techIndex < currentData.technologies; techIndex++){
+            var currentTech = currentData.technologies[ techIndex ];
+            allTechs[currentTech] = allTechs[currentTech] ? allTechs[currentTech]+1 : 1;
+            clone.addClass('tech-' + currentTech);
+        }
+
+        targetContainer.append(item);
+    }
+}
 
 function addFunItems(){
     var targetContainer = $("#experimentsAndFun .itemList");
