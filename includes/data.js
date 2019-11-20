@@ -7,6 +7,9 @@ var projectData = [
             'github': 'https://github.com/dpaschal-lf/todo_base_oop_jquery_mysql_php',
             'live': 'http://app.danielpaschal.com/todo_base_oop_jquery_mysql_php/',
         },
+        info: `A basic todo list created with 
+        <p>html/css/jquery client side</p>
+        <p>php/myhsql server side`,
         background: 'images/projects/todoexample.gif'
     },
     {
@@ -17,6 +20,7 @@ var projectData = [
             'github': 'https://github.com/dpaschal-lf',
             'live': 'http://danielpaschal.com',
         },
+        info: 'example data',
         background: 'https://files.realpython.com/media/13-Python-Projects-for-Intermediate-Developers_Watermarked.bb98d44bdb10.jpg'
     }
 ]

@@ -2,6 +2,7 @@
 $(document).ready( startApp );
 
 function startApp(){
+    addProjectItems();
     addFunItems();
     addGuideItems();
     addArticlesItems();
@@ -10,7 +11,7 @@ function startApp(){
 }
 
 function addProjectItems(){
-    var targetContainer = $("#guides .itemList");
+    var targetContainer = $("#projects .items");
     var allTechs = {};
     for( var dataIndex = 0; dataIndex < projectData.length; dataIndex++){
         var currentData = projectData[dataIndex];
@@ -23,8 +24,22 @@ function addProjectItems(){
             var currentTech = currentData.technologies[ techIndex ];
             allTechs[currentTech] = allTechs[currentTech] ? allTechs[currentTech]+1 : 1;
             clone.addClass('tech-' + currentTech);
+            var techInfo = techMap[currentTect];
+            var techTag = $('<i>').addClass( techInfo.classes).attr('alt',techInfo.altText);
+            titleDom.append(techTag);
         }
-
+        item.find('.github a').attr('href', currentData.links.github);
+        item.find('.live a').attr('href', currentData.links.live);
+        //totally could have done this with let on the loop's var or any number of other ways, but wanted to do a closure
+        (function(){
+            var clickData = currentData;
+            item.find('.info').click( 
+                function(){
+                    debugger;
+                    displayModal( clickData.info );
+                }
+            )
+        }())
         targetContainer.append(item);
     }
 }
@@ -156,7 +171,7 @@ function determinePageLocation(  ){
 function displayModal( content ){
     $("#modalShadow").removeClass('hidden');
     $("#modalClose").off('click').click( this.hideModal );
-    $("#modalContent").html( content );
+    $("#modalContents").html( content );
 }
 function hideModal(){
     $("#modalShadow").addClass('hidden');
