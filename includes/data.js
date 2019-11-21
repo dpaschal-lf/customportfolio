@@ -2,7 +2,7 @@ var projectData = [
     {
         title: 'Todo jQuery',
         extraClasses: 'todoJqueryMysqlProject',
-        technologies: ['html','css','jquery','php','mysql'],
+        technologies: ['html','css','js','jquery','php','mysql'],
         links: {
             'github': 'https://github.com/dpaschal-lf/todo_base_oop_jquery_mysql_php',
             'live': 'http://app.danielpaschal.com/todo_base_oop_jquery_mysql_php/',
@@ -15,7 +15,7 @@ var projectData = [
     {
         title: 'Todo React Node',
         extraClasses: 'todoJqueryMysqlProject',
-        technologies: ['css','react','node','mysql'],
+        technologies: ['css','react','js','node','mysql'],
         links: {
             'github': 'https://github.com/dpaschal-lf/todo_base_oop_jquery_mysql_php',
             'live': 'http://app.danielpaschal.com/todo_base_oop_jquery_mysql_php/',
@@ -75,7 +75,7 @@ var techMap = {
         categories: ['server']
     },
     node: {
-        classes: "fab fa-node-js",
+        classes: "fab fa-node",
         altText: 'NodeJS',
         categories: ['server']
     }
