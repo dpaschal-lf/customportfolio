@@ -202,7 +202,7 @@ var funData = [
     {
         title: 'php tictactoe',
         description: 'js jquery css',
-        background: './images/fun/letterjuggle.png',
+        background: './images/fun/php_tictactoe.png',
         icons: [
             { classes: 'fab fa-php' },
             { classes: 'fab fa-css3-alt' },
