@@ -12,8 +12,7 @@ body{
     display: none;
 }
 .hidden-animated{
-    display: none;
-    transform: scale(0);
+    transform: scale(0)!important;
 }
 
 /* mobile menu */
@@ -178,7 +177,12 @@ body{
     background-image: url(https://storage.needpix.com/rsynced_images/clouds-background-005.jpg);
     background-attachment: fixed;
 }
-
+#projects .subtitle{
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 2px 2px black;
+}
 #projects .items{
     display: flex;
     flex-wrap: wrap;
@@ -193,6 +197,8 @@ body{
     position: relative;
     overflow: hidden;
     margin-bottom: 10%;
+    transform: scale(1);
+    transition-duration: 200ms;
 }
 #projects .item::before{
     content: '';
@@ -289,6 +295,7 @@ body{
     padding: 1em;
     margin: 0 1%;
     background-color: white;
+    cursor: pointer;
 }
 #projects .filters .techContainer.active{
     opacity: 1;
