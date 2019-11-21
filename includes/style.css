@@ -11,6 +11,10 @@ body{
 .hidden{
     display: none;
 }
+.hidden-animated{
+    display: none;
+    transform: scale(0);
+}
 
 /* mobile menu */
 .mobileMenu{

@@ -66,10 +66,10 @@ function projectTechFilterToggle( event ){
     $(this).toggleClass('active');
     var activeTech = [];
     var selectedElements = $(".techContainer.active");
-    $(".projects .item").show(200);
+    $("#projects .item").addClass('hidden-animated');
     for(var elementIndex = 0; elementIndex < selectedElements.length; elementIndex++){
-        var tech = selectedElements[ elementInex ].getAttribute('data-tech');
-        $(".projects .item" + tech ).hide(200);
+        var tech = selectedElements[ elementIndex ].getAttribute('data-tech');
+        $("#projects .item.tech-" + tech ).removeClass('hidden-animated');
     }
 }
 
