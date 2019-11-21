@@ -272,6 +272,24 @@ body{
     opacity: 0;
 }
 
+#projects .filters{
+    display: flex;
+    justify-content: center;
+    margin: 2% 0%;
+}
+#projects .filters .techContainer > *{
+    font-size: 3em;
+}
+#projects .filters .techContainer{
+    opacity: .4;
+    padding: 1em;
+    margin: 0 1%;
+    background-color: white;
+}
+#projects .filters .techContainer.active{
+    opacity: 1;
+}
+
 .testProject::before{
     background-image: url(https://files.realpython.com/media/13-Python-Projects-for-Intermediate-Developers_Watermarked.bb98d44bdb10.jpg);
 }
@@ -669,6 +687,19 @@ body{
 }
 .fa-php{
     color: blue;
+}
+.customIcon{
+    height: 1em;
+    width: 1em;
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+}
+.customIcon.mysql{
+    background-image:url(../images/tech/mysql_PNG9.png);
+}
+.customIcon.jquery{
+    background-image:url(../images/tech/jquery-logo-png--512.png);
 }
 
 /* large devices*/

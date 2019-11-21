@@ -27,12 +27,12 @@ var projectData = [
 
 var techMap = {
     mysql: {
-        classes: 'fa mysql',
+        classes: 'customIcon mysql',
         altText: 'MySQL',
         categories: ['database', 'server']
     },
     jquery: {
-        classes: 'fa jquery',
+        classes: 'customIcon jquery',
         altText: 'jQuery',
         categories: ['library','client']
     },

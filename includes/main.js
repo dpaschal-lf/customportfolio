@@ -2,7 +2,8 @@
 $(document).ready( startApp );
 
 function startApp(){
-    addProjectItems();
+    var techs = addProjectItems();
+    createProjectTechFilters( techs );
     addFunItems();
     addGuideItems();
     addArticlesItems();
@@ -40,6 +41,35 @@ function addProjectItems(){
             )
         }())
         targetContainer.append(item);
+    }
+    return allTechs;
+}
+
+function createProjectTechFilters( technologyList ){
+    for( var technology in technologyList ){
+        var techInfo = techMap[technology];
+        var techTag = $('<i>').addClass( techInfo.classes);
+        var techContainerButton = $("<div>",{
+            class: 'techContainer active',
+            'data-tech':  technology,
+            on: {
+                click: projectTechFilterToggle
+            }
+        })
+        techContainerButton.append( techTag );
+        $("#projects .filters").append( techContainerButton);
+    }
+    
+}
+
+function projectTechFilterToggle( event ){
+    $(this).toggleClass('active');
+    var activeTech = [];
+    var selectedElements = $(".techContainer.active");
+    $(".projects .item").show(200);
+    for(var elementIndex = 0; elementIndex < selectedElements.length; elementIndex++){
+        var tech = selectedElements[ elementInex ].getAttribute('data-tech');
+        $(".projects .item" + tech ).hide(200);
     }
 }
 
