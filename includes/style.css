@@ -87,9 +87,12 @@ body{
 
 /* sections */
 
-.title{
-    font-size: 2em;
+.title:first-child{
+    font-size: 5em;
     text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    padding: 2% 0%;
 }
 
 #skills, #projects, #articles, #experimentsAndFun, #guides, #contact{
