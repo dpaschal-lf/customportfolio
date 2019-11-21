@@ -152,9 +152,6 @@ function addArticlesItems(){
             lines.push( lineDom );
         }
         if(text){
-            if(currentData.title==='the quest for fire'){
-                //debugger;
-            }
             if((thisText.length+3)>=lineLength){
                 thisText = thisText.slice(0, -3);
             }
@@ -171,7 +168,6 @@ function addEventListeners(){
 }
 
 function scrollToSection( event ){
-    debugger;
     var target = event.target.getAttribute('data-section');
     var destinationElement = document.querySelector(target);
     var destinationLocation = $(destinationElement).offset().top;
