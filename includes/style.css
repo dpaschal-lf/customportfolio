@@ -87,7 +87,7 @@ body{
 
 /* sections */
 
-.title:first-child{
+.centerContainer > * > .title{
     font-size: 5em;
     text-align: center;
     color: white;
@@ -146,14 +146,15 @@ body{
 }
 .skillList .icon{
     position: relative;
-    height: 10vmin;
-    width: 10vmin;
+    height: 15vmin;
+    width: 15vmin;
     font-size: 8vmin;
-    line-height: 10vmin;
+    line-height: 15vmin;
     background-color: white;
     border-radius: 50%;
     color: lightskyblue;
     display: inline-block;
+    margin-bottom: 2vh;
 }
 
 #skills{
@@ -219,14 +220,19 @@ body{
     filter: blur(0px) grayscale(0%);
     background-size: 100% 100%;
 }
-#projects .item .title{
+#projects .titleAndList{
     position: absolute;
     top: 10%;
-    width: 100%;
-    transition-duration: .1s;
-    text-shadow: 3px 3px black;
+    left: 10%;
+    width: 80%;
     transform: scale(1);
     opacity: 1;
+}
+#projects .item .title{
+    transition-duration: .1s;
+    text-shadow: 3px 3px black;
+    font-size: 3em;
+    margin-bottom: 2%;
 }
 #projects .item .title > *{
     margin-left: .25em;
@@ -235,6 +241,14 @@ body{
 }
 #projects .item .title > *:first-child{
     margin-left: 1em;
+}
+#projects .item .techList{
+
+}
+#projects .item .techList > *{
+    margin: 0% 1%;
+    filter: drop-shadow(0px 0px 3px black);
+    font-size: 2em;
 }
 #projects .item .links{
     width: 99%;
@@ -279,7 +293,7 @@ body{
 #projects .fa{
     font-size: 2em;
 }
-#projects .item:hover .title{
+#projects .item:hover .titleAndList{
     transition-duration: .5s;
     transform: scale(3);
     opacity: 0;

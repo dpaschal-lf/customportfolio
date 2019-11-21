@@ -19,15 +19,15 @@ function addProjectItems(){
         var item = $("#projectItem").clone();
         item.addClass( currentData.extraClasses );
         item.removeAttr('id');
-        var titleDom = item.find('.title');
-        titleDom.text( currentData.title);
+        var techList = item.find('.techList');
+        item.find('.title').text( currentData.title);
         for( var techIndex=0; techIndex < currentData.technologies.length; techIndex++){
             var currentTech = currentData.technologies[ techIndex ];
             allTechs[currentTech] = allTechs[currentTech] ? allTechs[currentTech]+1 : 1;
             item.addClass('tech-' + currentTech);
             var techInfo = techMap[currentTech];
             var techTag = $('<i>').addClass( techInfo.classes).attr('alt',techInfo.altText);
-            titleDom.append(techTag);
+            techList.append(techTag);
         }
         item.find('.github a').attr('href', currentData.links.github);
         item.find('.live a').attr('href', currentData.links.live);
