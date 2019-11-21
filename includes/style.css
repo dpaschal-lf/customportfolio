@@ -701,20 +701,23 @@ body{
 /* coloring */
 
 .fa-js{
-    color: gold;
+    color: #F0DB4F;
     background-color: black;
 }
 .fa-html5{
-    color: orange;
+    color: #f16529;
 }
 .fa-css3-alt{
     color: blue;
 }
 .fa-react{
-    color: cornflowerblue;
+    color: #61DBFB;
 }
 .fa-php{
-    color: blue;
+    color: #787CB5;
+}
+.fa-node-js{
+    color: #66cc33;
 }
 .customIcon{
     height: 1em;
