@@ -60,6 +60,11 @@ var techMap = {
         classes: 'fab fa-php',
         altText: 'PHP',
         categories: ['server']
+    },
+    node: {
+        classes: "fab fa-node-js",
+        altText: 'NodeJS',
+        categories: ['server']
     }
 }
 
