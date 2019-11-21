@@ -52,6 +52,8 @@ function createProjectTechFilters( technologyList ){
         var techContainerButton = $("<div>",{
             class: 'techContainer active',
             'data-tech':  technology,
+            alt: techMap[technology].altText,
+            title: techMap[technology].altText,
             on: {
                 click: projectTechFilterToggle
             }
