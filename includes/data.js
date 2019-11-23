@@ -17,8 +17,8 @@ var projectData = [
         extraClasses: 'todoJqueryMysqlProject',
         technologies: ['css','react','js','node','mysql'],
         links: {
-            'github': 'https://github.com/dpaschal-lf/todo_base_oop_jquery_mysql_php',
-            'live': 'http://app.danielpaschal.com/todo_base_oop_jquery_mysql_php/',
+            'github': 'https://github.com/dpaschal-lf/todo_react_node',
+            'live': 'http://app.danielpaschal.com/todo_react_node/',
         },
         info: `A basic todo list created with 
         <p>html/css/jquery client side</p>
@@ -208,6 +208,17 @@ var funData = [
             { classes: 'fab fa-css3-alt' },
             { classes: 'fas fa-code', url: 'https://github.com/dpaschal-lf/php_tic_tac_toe' },
             { classes: 'fa fa-eye', url: 'http://danielpaschal.com/php_tic_tac_toe/'}
+        ]
+    },
+    {
+        title: 'newtonian physics',
+        description: 'js jquery css',
+        background: './images/fun/newtonianphysics.png',
+        icons: [
+            { classes: 'fab fa-js' },
+            { classes: 'fab fa-css3-alt' },
+            { classes: 'fas fa-code', url: 'https://github.com/dpaschal-lf/asteroids.git' },
+            { classes: 'fa fa-eye', url: 'http://app.danielpaschal.com/asteroids/'}
         ]
     }
 ]
