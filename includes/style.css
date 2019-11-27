@@ -329,6 +329,10 @@ body{
     background-image: url(../images/projects/todoreactexample.gif);
     background-position: top left;    
 }
+.tankDesignerProject::before{
+    background-image: url(../images/projects/tankdesigner.gif);
+    background-position: center;
+}
 
 /* end project section */
 
