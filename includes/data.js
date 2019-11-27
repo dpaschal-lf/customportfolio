@@ -30,6 +30,18 @@ var projectData = [
         background: 'images/projects/todoreactexample.gif'
     },
     {
+        title: 'Tank Designer',
+        extraClasses: 'tankDesignerProject',
+        technologies: ['css','js','html'],
+        links: {
+            'github': 'https://github.com/dpaschal-lf/tankDesigner',
+            'live': 'http://app.danielpaschal.com/tankdesigner/',
+        },
+        info: `A tank AI simulator that pits multiple tank AI against each other.
+        `,
+        background: 'images/projects/tankdesigner.gif'
+    },
+    {
         title: 'Project',
         extraClasses: 'testProject',
         technologies: ['html','css','jquery'],
