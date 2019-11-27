@@ -17,6 +17,7 @@ function addProjectItems(){
     for( var dataIndex = 0; dataIndex < projectData.length; dataIndex++){
         var currentData = projectData[dataIndex];
         var item = $("#projectItem").clone();
+        item.css('background-image', 'url('+currentData.background+')')
         item.addClass( currentData.extraClasses );
         item.removeAttr('id');
         var techList = item.find('.techList');
