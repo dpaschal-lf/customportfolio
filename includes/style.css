@@ -325,6 +325,10 @@ body{
     background-image: url(../images/projects/todoexample.gif);
     background-position: top left;
 }
+.todoReactNodeMysqlProject::before{
+    background-image: url(../images/projects/todoreactexample.gif);
+    background-position: top left;    
+}
 
 /* end project section */
 

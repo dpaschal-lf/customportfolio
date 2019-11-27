@@ -14,16 +14,20 @@ var projectData = [
     },
     {
         title: 'Todo React Node',
-        extraClasses: 'todoJqueryMysqlProject',
+        extraClasses: 'todoReactNodeMysqlProject',
         technologies: ['css','react','js','node','mysql'],
         links: {
             'github': 'https://github.com/dpaschal-lf/todo_react_node',
-            'live': 'http://app.danielpaschal.com/todo_react_node/',
+            'live': 'http://reactnodetodo.danielpaschal.com/',
         },
         info: `A basic todo list created with 
-        <p>html/css/jquery client side</p>
-        <p>php/myhsql server side`,
-        background: 'images/projects/todoexample.gif'
+        <ul>
+            <li>React</li>
+            <li>Bootstrap 4</li>
+            <li>Node</li>
+            <li>MySQL</li>
+        </ul>`,
+        background: 'images/projects/todoreactexample.gif'
     },
     {
         title: 'Project',
