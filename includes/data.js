@@ -66,7 +66,7 @@ var projectData = [
     {
         title: 'react news app',
         extraClasses: 'reactNewsApp',
-        technologies: ['react','css','php'],
+        technologies: ['react','css'],
         links: {
             'github': 'https://github.com/dpaschal-lf/newsproject',
             'live': 'http://app.danielpaschal.com/newsproject/',
