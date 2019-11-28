@@ -15,7 +15,7 @@ var projectData = [
     {
         title: 'Todo React Node',
         extraClasses: 'todoReactNodeMysqlProject',
-        technologies: ['css','react','js','node','mysql'],
+        technologies: ['css','react','js','node','mysql','bootstrap'],
         links: {
             'github': 'https://github.com/dpaschal-lf/todo_react_node',
             'live': 'http://reactnodetodo.danielpaschal.com/',
@@ -42,15 +42,15 @@ var projectData = [
         background: 'images/projects/tankdesigner.gif'
     },
     {
-        title: 'Project',
-        extraClasses: 'testProject',
-        technologies: ['html','css','jquery'],
+        title: 'Javascript Exercises',
+        extraClasses: 'javascriptExerciseProject',
+        technologies: ['html','css','jquery','php','mysql'],
         links: {
-            'github': 'https://github.com/dpaschal-lf',
-            'live': 'http://danielpaschal.com',
+            'github': 'https://github.com/dpaschal-lf/exercises',
+            'live': 'http://javascript-exercises.com/',
         },
-        info: 'example data',
-        background: 'https://files.realpython.com/media/13-Python-Projects-for-Intermediate-Developers_Watermarked.bb98d44bdb10.jpg'
+        info: 'An exercise website for learning core JS<p>Gives you specific feedback on errors',
+        background: 'images/projects/javascriptexercises.gif'
     }
 ]
 
@@ -94,6 +94,11 @@ var techMap = {
         classes: "fab fa-node",
         altText: 'NodeJS',
         categories: ['server']
+    },
+    bootstrap: {
+        classes: "fab fa-bootstrap",
+        altText: 'Bootstrap 3/4',
+        categories: ['library', 'client']
     }
 }
 
