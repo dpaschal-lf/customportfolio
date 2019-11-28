@@ -52,7 +52,6 @@ var projectData = [
         info: 'An exercise website for learning core JS<p>Gives you specific feedback on errors',
         background: 'images/projects/javascriptexercises.gif'
     },
-    ,
     {
         title: 'pure PHP memory match',
         extraClasses: 'phpMemoryMatchProject',
