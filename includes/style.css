@@ -666,6 +666,30 @@ body{
 }
 /* end guide section */
 
+/* contact section */
+.contactContainer{
+    display: flex;
+    justify-content: space-around;
+}
+.contactItem{
+    display: inline-block;
+    width: 35vmin;
+    height: 35vmin;
+    text-align: center;
+    text-decoration: none;
+    font-size: .7em;
+}
+.contactItem:visited{
+    color: blue;
+}
+.contactItem i{
+    font-size:3.5em;
+    margin: 5% 2% 10%;
+    display: block;
+}
+
+/* end contact section*/
+
 /* end sections */
 
 /* modal info */
