@@ -267,7 +267,7 @@ var funData = [
     {
         title: 'crytomatch',
         description: 'Crytocurrency Concentration',
-        background: './images/fun/crytomatch_still.png',
+        background: './images/fun/cryptomatch_still.png',
         icons: [
             { classes: 'fab fa-js' },
             { classes: 'fab fa-css3-alt' },
