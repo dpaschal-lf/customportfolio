@@ -378,3 +378,29 @@ var guidesData = [
         ]
     }
 ]
+function caesarShift(target, delta){
+    return target.split('').map( l => String.fromCharCode(l.charCodeAt(0)+delta)).join('');
+}
+
+var contactData = [
+    { 
+        title: 'email',
+        icon: 'far fa-envelope',
+        targetLink: '<a target="_blank" href="mailto:'+caeserShift(ebojfm/qbtdibmAhnbjm/dpn, -1)+'">'+caeserShift(ebojfm/qbtdibmAhnbjm/dpn, 1)+'</a>'
+    },
+    {
+        title: 'phone',
+        icon: 'fas fa-phone',
+        targetLink: '<a target="_blank" href="tel:'+caesarShift('D=D9AD@9BB@>',-15)+'">'+caesarShift('D=D9AD@9BB@>',-15)+'</a>'
+    },
+    {
+        title: 'github',
+        icon: 'fab fa-github-alt',
+        targetLink: '<a target="_blank" href="https://github.com/dpaschal-lf">dpaschal-lf</a>'
+    },
+    {
+        title: 'linkedin',
+        icon: 'fab fa-linkedin-in',
+        targetLink: '<a target="_blank" href="https://www.linkedin.com/in/daniel-paschal-4ba23038/">dpaschal-lf</a>'
+    },
+]
