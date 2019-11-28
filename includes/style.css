@@ -322,22 +322,42 @@ body{
     background-image: url(https://files.realpython.com/media/13-Python-Projects-for-Intermediate-Developers_Watermarked.bb98d44bdb10.jpg);
 }
 .todoJqueryMysqlProject::before{
+    background-image: url(../images/projects/todoexample_still.jpg);
+    background-position: top left;
+}
+.todoJqueryMysqlProject:hover::before{
     background-image: url(../images/projects/todoexample.gif);
     background-position: top left;
 }
 .todoReactNodeMysqlProject::before{
+    background-image: url(../images/projects/todoreactexample_still.jpg);
+    background-position: top left;    
+}
+.todoReactNodeMysqlProject:hover::before{
     background-image: url(../images/projects/todoreactexample.gif);
     background-position: top left;    
 }
 .tankDesignerProject::before{
+    background-image: url(../images/projects/tankdesigner_still.jpg);
+    background-position: center;
+}
+.tankDesignerProject:hover::before{
     background-image: url(../images/projects/tankdesigner.gif);
     background-position: center;
 }
 .javascriptExerciseProject::before{
+    background-image: url(../images/projects/javascriptexercises_still.jpg);
+    background-position: center;    
+}
+.javascriptExerciseProject:hover::before{
     background-image: url(../images/projects/javascriptexercises.gif);
     background-position: center;    
 }
 .phpMemoryMatchProject::before{
+    background-image: url(../images/projects/phpmemorymatch_still.jpg);
+    background-position: center;    
+}
+.phpMemoryMatchProject:hover::before{
     background-image: url(../images/projects/phpmemorymatch.gif);
     background-position: center;    
 }
