@@ -263,6 +263,17 @@ var funData = [
             { classes: 'fas fa-code', url: 'https://github.com/dpaschal-lf/asteroids.git' },
             { classes: 'fa fa-eye', url: 'http://app.danielpaschal.com/asteroids/'}
         ]
+    },
+    {
+        title: 'crytomatch',
+        description: 'Crytocurrency Concentration',
+        background: './images/fun/crytomatch_still.png',
+        icons: [
+            { classes: 'fab fa-js' },
+            { classes: 'fab fa-css3-alt' },
+            { classes: 'fas fa-code', url: 'https://github.com/dpaschal-lf/cryptomatch' },
+            { classes: 'fa fa-eye', url: 'http://app.danielpaschal.com/cryptomatch/'}
+        ]
     }
 ]
 
