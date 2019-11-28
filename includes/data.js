@@ -377,7 +377,7 @@ var guidesData = [
             { classes: 'fa fa-eye', url: 'https://docs.google.com/presentation/d/e/2PACX-1vRQCUCXZu_XVqm5-rilvwg4U8KhkkMWEyRt2JH6KmRRVQBVSpXGegKuyNto--GsHbDQPyTpViI0Sq0Q/pub?start=false&loop=false&delayms=3000&slide=id.g1b2ecf4593_0_0'}
         ]
     }
-]
+];
 function caesarShift(target, delta){
     return target.split('').map( l => String.fromCharCode(l.charCodeAt(0)+delta)).join('');
 }
@@ -386,14 +386,14 @@ var contactData = [
     { 
         title: 'email',
         icon: 'far fa-envelope',
-        targetLink: 'mailto:'+caeserShift(ebojfm/qbtdibmAhnbjm/dpn, -1),
-        targetText: caeserShift(ebojfm/qbtdibmAhnbjm/dpn, 1)
+        targetLink: 'mailto:'+caesarShift('gdqlho1sdvfkdoCjpdlo1frp', -3),
+        targetText: caesarShift('gdqlho1sdvfkdoCjpdlo1frp', -3)
     },
     {
         title: 'phone',
         icon: 'fas fa-phone',
-        targetLink: 'tel:'+caesarShift('D=D9AD@9BB@>',-15),
-        targetText: caesarShift('D=D9AD@9BB@>',-15)
+        targetLink: 'tel:'+caesarShift('D=D9AD@9BB@>',-12),
+        targetText: caesarShift('D=D9AD@9BB@>',-12)
     },
     {
         title: 'github',
