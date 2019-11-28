@@ -361,6 +361,14 @@ body{
     background-image: url(../images/projects/phpmemorymatch.gif);
     background-position: center;    
 }
+.reactNewsApp::before{
+    background-image: url(../images/projects/newsproject_still.jpg);
+    background-position: center;    
+}
+.reactNewsApp:hover::before{
+    background-image: url(../images/projects/newsproject.gif);
+    background-position: top;    
+}
 
 /* end project section */
 

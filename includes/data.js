@@ -10,7 +10,7 @@ var projectData = [
         info: `A basic todo list created with 
         <p>html/css/jquery client side</p>
         <p>php/myhsql server side`,
-        background: 'images/projects/todoexample.gif'
+        background: 'images/projects/todoexample_still.jpg'
     },
     {
         title: 'Todo React Node',
@@ -27,7 +27,7 @@ var projectData = [
             <li>Node</li>
             <li>MySQL</li>
         </ul>`,
-        background: 'images/projects/todoreactexample.gif'
+        background: 'images/projects/todoreactexample_still.jpg'
     },
     {
         title: 'Tank Designer',
@@ -39,7 +39,7 @@ var projectData = [
         },
         info: `A tank AI simulator that pits multiple tank AI against each other.
         `,
-        background: 'images/projects/tankdesigner.gif'
+        background: 'images/projects/tankdesigner_still.jpg'
     },
     {
         title: 'Javascript Exercises',
@@ -50,7 +50,7 @@ var projectData = [
             'live': 'http://javascript-exercises.com/',
         },
         info: 'An exercise website for learning core JS<p>Gives you specific feedback on errors',
-        background: 'images/projects/javascriptexercises.gif'
+        background: 'images/projects/javascriptexercises_still.jpg'
     },
     {
         title: 'pure PHP memory match',
@@ -61,7 +61,7 @@ var projectData = [
             'live': 'http://app.danielpaschal.com/memorymatch_php',
         },
         info: 'A pure PHP server version of concentration',
-        background: 'images/projects/phpmemorymatch.gif'
+        background: 'images/projects/phpmemorymatch_still.jpg'
     },
     {
         title: 'react news app',
@@ -69,10 +69,10 @@ var projectData = [
         technologies: ['react','css','php'],
         links: {
             'github': 'https://github.com/dpaschal-lf/newsproject',
-            'live': 'http://app.danielpaschal.com/newsproject',
+            'live': 'http://app.danielpaschal.com/newsproject/',
         },
         info: 'A react app using google news api',
-        background: 'images/projects/newsproject.gif'
+        background: 'images/projects/newsproject_still.jpg'
     }
 ]
 
