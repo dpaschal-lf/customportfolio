@@ -337,6 +337,10 @@ body{
     background-image: url(../images/projects/javascriptexercises.gif);
     background-position: center;    
 }
+.phpMemoryMatchProject::before{
+    background-image: url(../images/projects/phpmemorymatch.gif);
+    background-position: center;    
+}
 
 /* end project section */
 
