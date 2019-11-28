@@ -51,6 +51,18 @@ var projectData = [
         },
         info: 'An exercise website for learning core JS<p>Gives you specific feedback on errors',
         background: 'images/projects/javascriptexercises.gif'
+    },
+    ,
+    {
+        title: 'pure PHP memory match',
+        extraClasses: 'phpMemoryMatchProject',
+        technologies: ['html','css','php'],
+        links: {
+            'github': 'https://github.com/dpaschal-lf/memoryMatch_purePHP',
+            'live': 'http://app.danielpaschal.com/memorymatch_php',
+        },
+        info: 'A pure PHP server version of concentration',
+        background: 'images/projects/phpmemorymatch.gif'
     }
 ]
 
