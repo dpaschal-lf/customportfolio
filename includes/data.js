@@ -386,21 +386,25 @@ var contactData = [
     { 
         title: 'email',
         icon: 'far fa-envelope',
-        targetLink: '<a target="_blank" href="mailto:'+caeserShift(ebojfm/qbtdibmAhnbjm/dpn, -1)+'">'+caeserShift(ebojfm/qbtdibmAhnbjm/dpn, 1)+'</a>'
+        targetLink: 'mailto:'+caeserShift(ebojfm/qbtdibmAhnbjm/dpn, -1),
+        targetText: caeserShift(ebojfm/qbtdibmAhnbjm/dpn, 1)
     },
     {
         title: 'phone',
         icon: 'fas fa-phone',
-        targetLink: '<a target="_blank" href="tel:'+caesarShift('D=D9AD@9BB@>',-15)+'">'+caesarShift('D=D9AD@9BB@>',-15)+'</a>'
+        targetLink: 'tel:'+caesarShift('D=D9AD@9BB@>',-15),
+        targetText: caesarShift('D=D9AD@9BB@>',-15)
     },
     {
         title: 'github',
         icon: 'fab fa-github-alt',
-        targetLink: '<a target="_blank" href="https://github.com/dpaschal-lf">dpaschal-lf</a>'
+        targetLink: 'https://github.com/dpaschal-lf',
+        targetText: 'dpaschal-lf'
     },
     {
         title: 'linkedin',
         icon: 'fab fa-linkedin-in',
-        targetLink: '<a target="_blank" href="https://www.linkedin.com/in/daniel-paschal-4ba23038/">dpaschal-lf</a>'
+        targetLink: 'https://www.linkedin.com/in/daniel-paschal-4ba23038/',
+        targetText: 'Daniel Paschal'
     },
 ]
