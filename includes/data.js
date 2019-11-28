@@ -62,6 +62,17 @@ var projectData = [
         },
         info: 'A pure PHP server version of concentration',
         background: 'images/projects/phpmemorymatch.gif'
+    },
+    {
+        title: 'react news app',
+        extraClasses: 'reactNewsApp',
+        technologies: ['react','css','php'],
+        links: {
+            'github': 'https://github.com/dpaschal-lf/newsproject',
+            'live': 'http://app.danielpaschal.com/newsproject',
+        },
+        info: 'A react app using google news api',
+        background: 'images/projects/newsproject.gif'
     }
 ]
 
