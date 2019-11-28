@@ -9,6 +9,7 @@ function startApp(){
     addArticlesItems();
     addEventListeners();
     determinePageLocation();
+    addContactInfo();
 }
 
 function addProjectItems(){
@@ -162,6 +163,25 @@ function addArticlesItems(){
         }
         item.find('.intro').attr('href', currentData.url).append( lines );
         targetContainer.append(item);
+    }
+}
+/*
+            <a id="contactItem" class="contactItem" href="#stuff">
+                <i class="" alt="" title=""></i>
+                text
+            </a>
+*/
+function addContactInfo(){
+    var targetContainer = $("#contact .contactContainer");
+    var targetClone = $("#contactItem");
+    for(var contactIndex = 0; contactIndex < contactData.length; contactIndex++){
+        var contactDatum = contactData[contactIndex];
+        var clone = targetClone.clone();
+        clone.removeAttr('id');
+        clone.attr('href', contactDatum.targetLink);
+        clone.find('i').addClass(contactDatum.icon).attr('alt',contactDatum.title).attr('title',contactDatum.title);
+        clone.append(contactDatum.targetText);
+        targetContainer.append(clone);
     }
 }
 
