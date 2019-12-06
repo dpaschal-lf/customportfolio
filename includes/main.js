@@ -32,7 +32,11 @@ function addProjectItems(){
             techList.append(techTag);
         }
         item.find('.github a').attr('href', currentData.links.github);
-        item.find('.live a').attr('href', currentData.links.live);
+        if(currentData.links.live){
+            item.find('.live a').attr('href', currentData.links.live);
+        } else {
+            item.find('.live a').remove();
+        }
         //totally could have done this with let on the loop's var or any number of other ways, but wanted to do a closure
         (function(){
             var clickData = currentData;

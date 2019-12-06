@@ -80,7 +80,7 @@ var projectData = [
         technologies: ['react','php','mysql','css','aws'],
         links: {
             'github': 'https://github.com/dpaschal-lf/instagramclone',
-            'live': 'http://app.danielpaschal.com/instagram/',
+            //'live': '#http://app.danielpaschal.com/instagram/',
         },
         info: 'A react clone of instagram with a php/mysql backend',
         background: 'images/projects/instagram_still.jpg'
