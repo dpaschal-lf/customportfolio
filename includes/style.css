@@ -305,19 +305,19 @@ body{
     margin: 2% 0%;
 }
 #projects .filters .techContainer > *{
-    font-size: 3em;
+    font-size: 5vmin;
 }
 #projects .filters .techContainer{
     opacity: .4;
-    padding: 1em;
+    padding: 1vmin;
     margin: 0 1%;
     background-color: white;
     cursor: pointer;
+    border-radius: 10%;
 }
 #projects .filters .techContainer.active{
     opacity: 1;
 }
-
 .testProject::before{
     background-image: url(https://files.realpython.com/media/13-Python-Projects-for-Intermediate-Developers_Watermarked.bb98d44bdb10.jpg);
 }
@@ -368,6 +368,14 @@ body{
 .reactNewsApp:hover::before{
     background-image: url(../images/projects/newsproject.gif);
     background-position: top;    
+}
+.instagramProject::before{
+    background-image: url(../images/projects/instagram_still.png);
+    background-position: center;    
+}
+.instagramProject:hover::before{
+    background-image: url(../images/projects/instagram_still.png);
+    background-position: center;    
 }
 
 /* end project section */
@@ -786,6 +794,13 @@ body{
 }
 .fa-node{
     color: #66cc33;
+}
+.fa-aws{
+    color: #232F3E;
+    color: #FFFFFF;
+}
+.filters .fa-aws{
+    filter: drop-shadow(-1px -1px 2px black);
 }
 .customIcon{
     height: 1em;

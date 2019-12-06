@@ -73,6 +73,17 @@ var projectData = [
         },
         info: 'A react app using google news api',
         background: 'images/projects/newsproject_still.jpg'
+    },
+    {
+        title: 'instagram clone',
+        extraClasses: 'instagramProject',
+        technologies: ['react','php','mysql','css','aws'],
+        links: {
+            'github': 'https://github.com/dpaschal-lf/instagramclone',
+            'live': 'http://app.danielpaschal.com/instagram/',
+        },
+        info: 'A react clone of instagram with a php/mysql backend',
+        background: 'images/projects/instagram_still.jpg'
     }
 ]
 
@@ -121,6 +132,11 @@ var techMap = {
         classes: "fab fa-bootstrap",
         altText: 'Bootstrap 3/4',
         categories: ['library', 'client']
+    },
+    aws: {
+        classes: "fab fa-aws",
+        altText: 'AWS services',
+        categories: ['hosting', 'SAAS']
     }
 }
 
@@ -445,4 +461,10 @@ var contactData = [
         targetLink: 'https://www.linkedin.com/in/daniel-paschal-4ba23038/',
         targetText: 'Daniel Paschal'
     },
+    {
+        title: 'senior dev résumé',
+        icon: 'fas fa-file',
+        targetLink: 'includes/daniel_paschal_2019_12_05.pdf',
+        targetText: 'résumé'
+    }
 ]
