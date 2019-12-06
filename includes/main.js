@@ -212,7 +212,6 @@ function determinePageLocation(  ){
     var currentPosition = 0;
     var currentHeight = 0;
     while( currentPosition < targets.length && currentScroll > currentHeight){
-        console.log('height: ' + currentHeight );
         currentHeight += $(targets[++currentPosition]).height();
     }
     $("#nav .desktopMenu .menuItem").eq(currentPosition).addClass('selected');
