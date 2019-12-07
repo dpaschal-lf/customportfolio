@@ -430,6 +430,13 @@ var guidesData = [
             { classes: 'fab fa-js' },
             { classes: 'fa fa-eye', url: 'https://docs.google.com/presentation/d/e/2PACX-1vRQCUCXZu_XVqm5-rilvwg4U8KhkkMWEyRt2JH6KmRRVQBVSpXGegKuyNto--GsHbDQPyTpViI0Sq0Q/pub?start=false&loop=false&delayms=3000&slide=id.g1b2ecf4593_0_0'}
         ]
+    },
+    {
+        title: 'higher order functions',
+        icons: [
+            { classes: 'fab fa-js' },
+            { classes: 'fa fa-eye', url: 'https://docs.google.com/presentation/d/e/2PACX-1vT8tCKjYFSAlGU02Yu9lmNbHaiCZtmbjT7kYdgPM6E1EDRz0Jlh0oUbguPb_JpsV73sgVH7SyN1nM6B/pub?start=false&loop=false&delayms=3000'}
+        ]
     }
 ];
 function caesarShift(target, delta){
