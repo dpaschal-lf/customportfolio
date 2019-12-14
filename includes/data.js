@@ -194,7 +194,7 @@ var funData = [
         ]
     },
     {
-        title: 'collapsible folders',
+        title: 'color picker',
         description: 'js react-js css',
         background: './images/fun/colorlevels.png',
         icons: [
