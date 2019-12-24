@@ -811,7 +811,9 @@ body{
     filter: drop-shadow(-1px -1px 2px black);
 }
 .di{
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 1em;
     width: 1em;
     display: inline-block;
