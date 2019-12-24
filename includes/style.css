@@ -377,6 +377,14 @@ body{
     background-image: url(../images/projects/instagram_still.png);
     background-position: center;    
 }
+.url-shortener::before{
+    background-image: url(../images/projects/url-shortener.png);
+    background-position: center;    
+}
+.url-shortener:hover::before{
+    background-image: url(../images/projects/url-shortener.png);
+    background-position: center;    
+}
 
 /* end project section */
 
@@ -801,6 +809,24 @@ body{
 }
 .filters .fa-aws{
     filter: drop-shadow(-1px -1px 2px black);
+}
+.di{
+    background-size: cover;
+    height: 1em;
+    width: 1em;
+    display: inline-block;
+}
+.di-lambda{
+    background-image: url(../images/logos/aws-lambda-1.svg);
+}
+.di-dynamodb{
+    background-image: url(../images/logos/aws-dynamodb.svg);
+}
+.di-s3{
+    background-image: url(../images/logos/aws-s3.svg);
+}
+.di-iam{
+    background-image: url(../images/logos/aws-iam.svg);
 }
 .customIcon{
     height: 1em;

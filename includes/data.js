@@ -83,7 +83,18 @@ var projectData = [
             //'live': '#http://app.danielpaschal.com/instagram/',
         },
         info: 'A react clone of instagram with a php/mysql backend',
-        background: 'images/projects/instagram_still.jpg'
+        background: 'images/projects/instagram_still.png'
+    },
+    {
+        title: 'url shortener',
+        extraClasses: 'url-shortener',
+        technologies: ['aws','node','lambda','s3','iam','dynamodb'],
+        links: {
+            'github': 'https://github.com/dpaschal-lf/tldr',
+            'live': 'http://daniel-paschal-bitly.s3-website-us-west-2.amazonaws.com/',
+        },
+        info: 'lambda + dynamodb microservice url shortener',
+        background: 'images/projects/instagram_still.png'
     }
 ]
 
@@ -137,6 +148,27 @@ var techMap = {
         classes: "fab fa-aws",
         altText: 'AWS services',
         categories: ['hosting', 'SAAS']
+    },
+    lambda: {
+        classes: "di di-lambda",
+        altText: "AWS Lambda",
+        categories: ['hosting', 'SAAS', 'microservice']
+    },
+    dynamodb: {
+        classes: "di di-dynamodb",
+        altText: "AWS dynamoDB",
+        categories: ['database', 'SAAS', 'microservice']       
+    },
+    s3: {
+        classes: "di di-s3",
+        altText: "AWS s3",
+        categories: ['hosting', 'SAAS']       
+    }
+    ,
+    iam: {
+        classes: "di di-iam",
+        altText: "AWS iam",
+        categories: ['authentication', 'SAAS']       
     }
 }
 
