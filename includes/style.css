@@ -382,7 +382,7 @@ body{
     background-position: center;    
 }
 .url-shortener:hover::before{
-    background-image: url(../images/projects/url-shortener.png);
+    background-image: url(../images/projects/urlshortenerdemo.gif);
     background-position: center;    
 }
 
@@ -808,7 +808,10 @@ body{
     color: #FFFFFF;
 }
 .filters .fa-aws{
-    filter: drop-shadow(-1px -1px 2px black);
+    filter: drop-shadow(-1px -1px 3px black);
+}
+#projects .item .techList .fa-aws{
+    filter: drop-shadow(-1px -1px 3px black);
 }
 .di{
     background-size: contain;
