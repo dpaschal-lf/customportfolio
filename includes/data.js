@@ -503,7 +503,7 @@ var contactData = [
     {
         title: 'senior dev résumé',
         icon: 'fas fa-file',
-        targetLink: 'includes/daniel_paschal_2019_12_05.pdf',
+        targetLink: 'includes/Daniel_Paschal-Senior_Software_Engineer-2020-01.pdf',
         targetText: 'résumé'
     }
 ]
